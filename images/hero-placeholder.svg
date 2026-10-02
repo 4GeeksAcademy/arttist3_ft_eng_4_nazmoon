@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="50%" stop-color="#2d2d4a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#c0846b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c0846b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silhouette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1f"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Spotlight effect -->
+  <rect width="1200" height="800" fill="url(#spotlight)"/>
+  <!-- Stage floor -->
+  <ellipse cx="600" cy="720" rx="500" ry="60" fill="#15152a" opacity="0.6"/>
+  <!-- Silhouette figure (singer with microphone) -->
+  <g transform="translate(600,360)">
+    <!-- Body -->
+    <ellipse cx="0" cy="60" rx="30" ry="80" fill="url(#silhouette)"/>
+    <!-- Head -->
+    <circle cx="0" cy="-50" r="28" fill="url(#silhouette)"/>
+    <!-- Hair -->
+    <ellipse cx="0" cy="-75" rx="35" ry="40" fill="#0a0a1a"/>
+    <!-- Mic stand -->
+    <line x1="20" y1="40" x2="20" y2="150" stroke="#333" stroke-width="3" opacity="0.5"/>
+    <ellipse cx="20" cy="35" rx="6" ry="10" fill="#555" opacity="0.6"/>
+    <!-- Arm to mic -->
+    <path d="M 15,30 Q 25,30 25,10" stroke="url(#silhouette)" stroke-width="6" fill="none"/>
+    <!-- Stage lights -->
+    <circle cx="200" cy="200" r="80" fill="#c0846b" opacity="0.08"/>
+    <circle cx="1000" cy="200" r="80" fill="#c0846b" opacity="0.08"/>
+    <circle cx="150" cy="300" r="40" fill="#d9a88e" opacity="0.06"/>
+    <circle cx="1050" cy="300" r="40" fill="#d9a88e" opacity="0.06"/>
+  </g>
+  <!-- Particles / dust motes in light -->
+  <g opacity="0.15">
+    <circle cx="350" cy="250" r="2" fill="#c0846b"/><circle cx="450" cy="300" r="1.5" fill="#c0846b"/>
+    <circle cx="700" cy="280" r="2" fill="#c0846b"/><circle cx="550" cy="350" r="1" fill="#c0846b"/>
+    <circle cx="800" cy="220" r="1.5" fill="#c0846b"/><circle cx="300" cy="380" r="1" fill="#c0846b"/>
+  </g>
+  <!-- Overlay gradient for readability -->
+  <rect width="1200" height="800" fill="rgba(0,0,0,0.2)"/>
+  <!-- Microphone feedback text -->
+  <text x="600" y="780" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666" opacity="0.4">Nazmoon — Hero Image (placeholder)</text>
+</svg>
